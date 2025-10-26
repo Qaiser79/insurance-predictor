@@ -1,0 +1,11 @@
+# Frontend
+node_modules/
+dist/
+
+# Backend
+__pycache__/
+*.pkl
+
+# General
+.env
+.DS_Store
