@@ -1,3 +1,4 @@
+
 # Medical Insurance Cost Prediction
 
 A data science project that predicts medical insurance costs based on user demographics and health indicators. The model is trained using regression techniques and deployed via FastAPI for real-time inference. Optional Vue 3 frontend included for interactive input.
@@ -35,3 +36,6 @@ This project explores the relationship between medical insurance costs and facto
 - Root Mean Squared Error (RMSE)
 
 Model performance was validated using cross-validation and multiple regressors including Linear, Ridge, and Random Forest. The final model balances interpretability and accuracy for real-world deployment.
+
+# insurance-predictor
+A data-driven project that predicts medical insurance costs using regression modeling. Through iterative feature engineering and model tuning, the mean R² score was improved from 0.54 to 0.75, significantly enhancing predictive accuracy. Built with Python and FastAPI for backend inference, and Vue 3 for optional frontend interaction.
