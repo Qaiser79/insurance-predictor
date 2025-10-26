@@ -1,20 +1,37 @@
-# Insurance Predictor
+# Medical Insurance Cost Prediction
 
-A full-stack medical insurance cost prediction app using Vue 3, FastAPI, scikit, pandas.
+A data science project that predicts medical insurance costs based on user demographics and health indicators. The model is trained using regression techniques and deployed via FastAPI for real-time inference. Optional Vue 3 frontend included for interactive input.
 
-## Structure
+## Project Overview
 
-- `insurance-frontend/` — Vue 3 frontend
-- `backend/` — FastAPI backend with trained model
+This project explores the relationship between medical insurance costs and factors like age, BMI, smoking status, and number of children. It includes:
 
-## How to Run
+- Exploratory Data Analysis (EDA)
+- Feature engineering and encoding
+- Model training and evaluation
+- Backend API for predictions
+- Optional frontend for user interaction
 
-### Backend
-```bash
-cd backend
-uvicorn main:app --reload
+## Modeling Approach
 
-### Frontend
-cd insurance-frontend
-npm install
-npm run serve
+- Dataset: `insurance.csv`
+- Target: `charges`
+- Features:
+  - Age
+  - BMI
+  - Children
+  - Sex (encoded)
+  - Smoker (encoded)
+- Models tested:
+  - Linear Regression
+  - Ridge Regression
+  - Random Forest
+- Final model saved as `insurance_cost_model.pkl`
+
+# 📈 Evaluation Metrics
+
+- Mean R² Score: Improved from **0.54 → 0.75** through iterative feature engineering and model selection
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+
+Model performance was validated using cross-validation and multiple regressors including Linear, Ridge, and Random Forest. The final model balances interpretability and accuracy for real-world deployment.
